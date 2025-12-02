@@ -36,11 +36,14 @@ Dataset:https://drive.google.com/drive/folders/1iKdOs4slf3XvNWkeSfsszhPRggfJ2qEd
 
 6. Model Architecture
 CNN from Scratch
-•	Input → Conv2D (32 filters) → MaxPooling → Conv2D (64 filters) → MaxPooling → Conv2D (128 filters) → MaxPooling → Flatten → Dense(128) → Dropout → Dense(num_classes, softmax)
+•	Input
+ → Conv2D (32 filters) → MaxPooling → Conv2D (64 filters) → MaxPooling →
+ Conv2D (128 filters) → MaxPooling → Flatten → Dense(128) → Dropout → Dense(num_classes, softmax)
 Transfer Learning
-•	Base pre-trained model (VGG16, ResNet50, etc.) → GlobalAveragePooling → Dense(256) → Dropout → Dense(num_classes, softmax)
+•	Base pre-trained model (VGG16, ResNet50, etc.)
+ → GlobalAveragePooling → Dense(256) → Dropout → Dense(num_classes, softmax)
 
-7. Evaluation Metrics
+8. Evaluation Metrics
 Metric	Description
 Accuracy	Correct predictions / Total predictions
 Precision	TP / (TP + FP)
@@ -48,7 +51,7 @@ Recall	TP / (TP + FN)
 F1-score	Harmonic mean of Precision & Recall
 Confusion Matrix	True vs predicted class counts
 
-8. Results
+9. Results
 •	The best CNN model achieved high accuracy on test set
 •	Transfer learning models outperformed the CNN from scratch
 •	Confusion matrices visualize misclassifications
