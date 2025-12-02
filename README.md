@@ -7,32 +7,39 @@ Business Use Cases:
 Enhanced Accuracy: Determine the best model architecture for fish image classification.
 Deployment Ready: Create a user-friendly web application for real-time predictions.
 Model Comparison: Evaluate and compare metrics across models to select the most suitable approach for the task.
+
 Approach:
 Data Preprocessing and Augmentation
+
 Rescale images to [0, 1] range.
 Apply data augmentation techniques like rotation, zoom, and flipping to enhance model robustness.
+
 Model Training
 Train a CNN model from scratch.
 Experiment with five pre-trained models (e.g., VGG16, ResNet50, MobileNet, InceptionV3, EfficientNetB0).
 Fine-tune the pre-trained models on the fish dataset.
 Save the trained model (max accuracy model ) in .h5 or .pkl format for future use.
+
 Model Evaluation
 Compare metrics such as accuracy, precision, recall, F1-score, and confusion matrix across all models.
 Visualize training history (accuracy and loss) for each model.
+
 Deployment
 Build a Streamlit application to:
 Allow users to upload fish images.
 Predict and display the fish category.
 Provide model confidence scores.
+
 Dataset
 The dataset consists of images of fish, categorized into folders by species. The dataset is loaded using TensorFlow's ImageDataGenerator for efficient processing.
 Dataset:https://drive.google.com/drive/folders/1iKdOs4slf3XvNWkeSfsszhPRggfJ2qEd?usp=sharing
+
 6. Model Architecture
 CNN from Scratch
 •	Input → Conv2D (32 filters) → MaxPooling → Conv2D (64 filters) → MaxPooling → Conv2D (128 filters) → MaxPooling → Flatten → Dense(128) → Dropout → Dense(num_classes, softmax)
 Transfer Learning
 •	Base pre-trained model (VGG16, ResNet50, etc.) → GlobalAveragePooling → Dense(256) → Dropout → Dense(num_classes, softmax)
-________________________________________
+
 7. Evaluation Metrics
 Metric	Description
 Accuracy	Correct predictions / Total predictions
@@ -40,13 +47,14 @@ Precision	TP / (TP + FP)
 Recall	TP / (TP + FN)
 F1-score	Harmonic mean of Precision & Recall
 Confusion Matrix	True vs predicted class counts
-________________________________________
+
 8. Results
 •	The best CNN model achieved high accuracy on test set
 •	Transfer learning models outperformed the CNN from scratch
 •	Confusion matrices visualize misclassifications
 •	Fine-tuning improved the performance of pre-trained models
 (Add actual numbers, plots, and screenshots here from your experiments)
+
 11. Folder Structure
 fish_classification_project/
 ├─ data/
@@ -72,7 +80,7 @@ o	app.py — Streamlit web application
 •	TensorFlow / Keras
 •	NumPy, Matplotlib, Seaborn, Scikit-learn
 •	Streamlit
-________________________________________
+
 13. Future Work
 •	Add more fish species for higher diversity
 •	Hyperparameter tuning using libraries like Keras Tuner
