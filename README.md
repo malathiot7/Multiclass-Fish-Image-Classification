@@ -50,8 +50,6 @@ Provide model confidence scores.
 The dataset consists of images of fish, categorized into folders by species.
 The dataset is loaded using TensorFlow's ImageDataGenerator for efficient processing.
 
-Dataset:https://drive.google.com/drive/folders/1iKdOs4slf3XvNWkeSfsszhPRggfJ2qEd?usp=sharing
-
 5. Model Architecture
 CNN from Scratch
 •	Input
