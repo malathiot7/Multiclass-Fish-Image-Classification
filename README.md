@@ -1,5 +1,6 @@
 # Multiclass-Fish-Image-Classification
-Multiclass Fish Image Classification using deep learning. This project trains a CNN and fine-tunes multiple pre-trained models to classify fish into various categories.
+Multiclass Fish Image Classification using deep learning. 
+This project trains a CNN and fine-tunes multiple pre-trained models to classify fish into various categories.
 It saves the best model and includes a Streamlit app for real-time fish image prediction.
 
 1.Problem Statement:
@@ -8,17 +9,22 @@ The task involves training a CNN from scratch and leveraging transfer learning w
 The project also includes saving models for later use and deploying a Streamlit application to predict fish categories from user-uploaded images.
 
 2.Business Use Cases:
-Enhanced Accuracy: Determine the best model architecture for fish image classification.
-Deployment Ready: Create a user-friendly web application for real-time predictions.
-Model Comparison: Evaluate and compare metrics across models to select the most suitable approach for the task.
+Enhanced Accuracy: 
+        Determine the best model architecture for fish image classification.
+Deployment Ready:
+         Create a user-friendly web application for real-time predictions.
+Model Comparison: 
+         Evaluate and compare metrics across models to select the most suitable approach for the task.
 
 3.Approach:
 Data Preprocessing and Augmentation
 
 Rescale images to [0, 1] range.
-Apply data augmentation techniques like rotation,
+Apply data augmentation techniques like
+rotation,
 zoom, 
-and flipping to enhance model robustness.
+and flipping
+to enhance model robustness.
 
 Model Training
 Train a CNN model from scratch.
